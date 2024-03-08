@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container{
+  max-width: 1180px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+/* !nav styling  */
+
+.main-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0px;
+
+}
+
+nav{
+  background-color: rgb(208, 229, 241);
+  box-shadow: 0 0 40px rgb(0, 0, 0);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.company-logo img{
+  width: 120px;
+}
+
+/* ! ul styling */
+ul{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  gap: 29px;
+  color: #1c73d0;
+}
+.hover-link{
+  cursor: pointer;
+}
+.hover-link:hover{
+  color: rgb(79, 49, 231);
+}
+/* ! search bar stlying */
+.secrch-bar{
+  /* border: 1px solid red; */
+  height: 32px;
+  gap: 8px;
+}
+.news-input{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 200px;
+  color: #727272;
+  height: 100%;
+  border: none;
+  /* padd */
+  border-radius: 4px;
+  padding-inline: 15px;
+  border: 2px solid rgb(171, 168, 230);
+}
+input:focus{
+  outline: none;
+}
+.search-btn{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #1c73d0;
+  color: white;
+  height: 100%;
+  padding: 0px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.search-btn:hover{
+  background-color: rgb(79, 49, 231);
+}
