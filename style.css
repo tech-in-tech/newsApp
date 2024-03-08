@@ -1,14 +1,15 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: blue;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -16,7 +17,7 @@ ul {
   list-style: none;
 }
 
-.container{
+.container {
   max-width: 1180px;
   margin-inline: auto;
   overflow: hidden;
@@ -24,7 +25,7 @@ ul {
 
 /* !nav styling  */
 
-.main-nav{
+.main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +33,7 @@ ul {
 
 }
 
-nav{
+nav {
   background-color: rgb(208, 229, 241);
   box-shadow: 0 0 40px rgb(0, 0, 0);
   position: fixed;
@@ -41,31 +42,36 @@ nav{
   top: 0;
   z-index: 99;
 }
-.company-logo img{
+
+.company-logo img {
   width: 120px;
 }
 
 /* ! ul styling */
-ul{
+ul {
   display: flex;
   align-items: center;
   /* border: 1px solid red; */
   gap: 29px;
   color: #1c73d0;
 }
-.hover-link{
+
+.hover-link {
   cursor: pointer;
 }
-.hover-link:hover{
+
+.hover-link:hover {
   color: rgb(79, 49, 231);
 }
+
 /* ! search bar stlying */
-.secrch-bar{
+.secrch-bar {
   /* border: 1px solid red; */
   height: 32px;
   gap: 8px;
 }
-.news-input{
+
+.news-input {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 200px;
   color: #727272;
@@ -76,10 +82,12 @@ ul{
   padding-inline: 15px;
   border: 2px solid rgb(171, 168, 230);
 }
-input:focus{
+
+input:focus {
   outline: none;
 }
-.search-btn{
+
+.search-btn {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: #1c73d0;
   color: white;
@@ -89,6 +97,53 @@ input:focus{
   border-radius: 4px;
   cursor: pointer;
 }
-.search-btn:hover{
+
+.search-btn:hover {
   background-color: rgb(79, 49, 231);
+}
+
+/* !card containet styling*/
+main {
+  padding-block: 20px;
+  margin-top: 80px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  align-items: start;
+}
+
+.card {
+  width: 360px;
+  min-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px rgb(94, 95, 95);
+  cursor: pointer;
+  background-color: #ffffff;
+  overflow: hidden;
+  transform: all 0.3 ease;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 8px rgb(94, 95, 95);
+  background-color: #f9fdff;
+  transform: translateY(-2px);
+}
+
+.card-header img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px;
+}
+
+#news-source {
+  margin-block: 12px;
 }
