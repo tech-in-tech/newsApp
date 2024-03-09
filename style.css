@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: blue;
+  /* color: rgb(0, 0, 0); */
 }
 
 a {
@@ -129,11 +129,13 @@ main {
 }
 
 .card:hover {
-  box-shadow: 1px 1px 8px rgb(94, 95, 95);
-  background-color: #f9fdff;
-  transform: translateY(-2px);
+  box-shadow: 1px 5px 8px rgb(94, 95, 95);
+  background-color: #f0f0f4;
+  /* transform: translateY(-2px); */
 }
-
+.news-desc{
+  color: rgb(87, 87, 87);
+}
 .card-header img {
   width: 100%;
   height: 180px;
