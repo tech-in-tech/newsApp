@@ -11,15 +11,16 @@
 <body>
   <nav>
     <div class="main-nav container flex">
-      <a href="#" class="company-logo">
-        <img src="logo (2).png" alt="Company logo">
+      <a href="#" onclick="reload()" class="company-logo">
+        <!-- <img src="logo (2).png" alt="Company logo"> -->
+        NEWS
       </a>
       <div class="nav-links">
         <ul>
-          <li class="hover-link nav-item">IPL</li>
-          <li class="hover-link nav-item">Finance</li>
-          <li class="hover-link nav-item">Politics</li>
-          <li class="hover-link nav-item">tech</li>
+          <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+          <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+          <li class="hover-link nav-item" id="Politics" onclick="onNavItemClick('politics')">Politics</li>
+          <li class="hover-link nav-item" id="tech" onclick="onNavItemClick('tech')">tech</li>
         </ul>
       </div>
       <div class="secrch-bar">

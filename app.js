@@ -2,7 +2,9 @@ const apiKey = "a79657c87600401599949581c69c83ba"
 const url = "https://newsapi.org/v2/everything?q=tesla&from=2024-02-09&sortBy=publishedAt&"
 
 window.addEventListener("load", async () => fetchNews("india"));
-
+function reload(){
+  window.location.reload();
+}
 
 async function fetchNews(query) {
   const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=2024-02-09&sortBy=publishedAt&apiKey=${apiKey}`);
@@ -39,11 +41,25 @@ function fillDataInCard(cardClone, article) {
   // goToNews(article.url,cardClone);
   cardClone.firstElementChild.addEventListener("click",()=>{
     window.open(article.url,"_blank")
-  })
-  
+  }) 
 }
 
+const ipl = document.querySelector("#ipl");
+const tech = document.querySelector("#tech");
+const politics = document.querySelector("#politics");
+const finance = document.querySelector("#finance");
 
 
 
+function onNavItemClick(id){
+  fetchNews(id)
+}
 
+const searchBtn = document.querySelector(".search-btn");
+const input = document.querySelector(".news-input");
+
+searchBtn.addEventListener("click",()=>{
+  const query = input.value;
+  if(!query) return
+  fetchNews(query);
+})
