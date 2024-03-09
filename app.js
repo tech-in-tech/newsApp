@@ -1,13 +1,13 @@
 const apiKey = "a79657c87600401599949581c69c83ba"
-const url = "https://newsapi.org/v2/everything?q=tesla&from=2024-02-09&sortBy=publishedAt&"
+const url = "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=tesla&from=2024-02-09&sortBy=publishedAt&"
 
-// window.addEventListener("load", async () => fetchNews("india"));
-// function reload(){
-//   window.location.reload();
-// }
+window.addEventListener("load", async () => fetchNews("india"));
+function reload(){
+  window.location.reload();
+}
 
 async function fetchNews(query) {
-  const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=2024-02-09&sortBy=publishedAt&apiKey=${apiKey}`);
+  const response = await fetch(`https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=${query}&from=2024-02-09&sortBy=publishedAt&apiKey=${apiKey}`);
   const data = await response.json();
   console.log(data);
   bindData(data.articles);
