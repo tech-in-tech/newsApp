@@ -43,9 +43,8 @@ nav {
   z-index: 99;
 }
 
-.company-logo  {
-  /* width: 120px; */
-  font-size: 40px;
+.company-logo img {
+  width: 120px;
 }
 
 /* ! ul styling */
@@ -149,17 +148,4 @@ main {
 
 #news-source {
   margin-block: 12px;
-}
-
-@media screen and (max-width: 670px) {
-  .company-logo {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .main-nav {
-    flex-direction: column;
-    gap: 20px;
-  }
 }
